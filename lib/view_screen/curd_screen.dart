@@ -195,30 +195,8 @@ class _CurdScreenState extends State<CurdScreen> {
       child: ElevatedButton(
           onPressed: () {
             if (player_name.length >= 2) {
-              /*ScaffoldMessenger.of(context).showSnackBar(
-                SnackBar(
-                    backgroundColor: Colors.green,
-                    content: Text(
-                      "You are enable for playing games",
-                      style: TextStyle(
-                          fontSize: 14,
-                          fontWeight: FontWeight.w400,
-                          color: Colors.white),
-                    )),
-              );*/
               popUpObj.successAlert(context);
             } else {
-              /* ScaffoldMessenger.of(context).showSnackBar(
-                SnackBar(
-                    backgroundColor: Colors.red,
-                    content: Text(
-                      "You are Not enable for playing games",
-                      style: TextStyle(
-                          fontSize: 14,
-                          fontWeight: FontWeight.w400,
-                          color: Colors.white),
-                    )),
-              );*/
               popUpObj.errorAlert(context);
             }
           },
